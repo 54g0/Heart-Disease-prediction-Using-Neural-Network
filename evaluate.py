@@ -2,6 +2,10 @@ import torch
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from model import HeartDiseaseNN
+from sklearn.model_selection import train_test_split
+from torch.utils.data import TensorDataset, DataLoader
+from model import HeartDiseaseNN
+
 data = pd.read_csv("/content/Downloads")
 
 #Data-Splitting
